@@ -1,0 +1,21 @@
+//JavaScript Program to sort array in Descending order.
+var arr = [3,5,9,6,2,7,1,4];
+var temp = 0;
+for(var i = 0; i< arr.length;i++){
+    for(var j = 0;j<arr.length;j++){
+        if(i!=j){
+            if(arr[i]>arr[j]){
+                temp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = temp;
+            }
+        }
+    }
+}
+console.log(arr);
+/*
+Output:
+[
+  9, 7, 6, 5, 4, 3, 2, 1
+]
+*/
