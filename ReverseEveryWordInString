@@ -1,0 +1,18 @@
+/*
+This is a JavaScript Code Which will reverse every word in a String
+Input and Output
+Old String : This is a sunny day
+New String : sihT si a ynnus yad 
+*/
+var str = "This is a sunny day";
+var newStr="" ;
+var strArr = str.split(" ")
+for(var i =0 ;i<strArr.length;i++){
+    var str1 = strArr[i];
+    for(var j = str1.length-1 ; j>=0;j--){
+        newStr+=str1[j];
+    }
+    newStr+=" ";
+}
+console.log("Old String : " + str);
+console.log("New String : " + newStr);
